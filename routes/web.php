@@ -20,26 +20,3 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/search/provinces', function (Request $request) {
-//     if($request->get('id')){
-//         $data = Ongkir::find(['province_id' => $request->id])->province()->get();
-//     } else {
-//         $data = Ongkir::province()->get();
-//     }
-
-//     return $data;
-// });
-
-Route::get('/search/provinces', [RajaOngkirController::class, 'getProvinces']);
-
-Route::get('/search/cities', [RajaOngkirController::class, 'getCities']);
-
-// Route::get('/search/provinces', function (Request $request) {
-//     if($request->get('id')){
-//         $data = Ongkir::find(['province_id' => $request->id])->province()->get();
-//     } else {
-//         $data = Ongkir::province()->get();
-//     }
-
-//     return $data;
-// });
