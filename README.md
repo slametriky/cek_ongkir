@@ -14,30 +14,31 @@ Cek ongkir dengan Laravel 8.x dan API Rajaongkir
 
 #### Konfigurasi File
 Open .env file and add this line
+
+    ....
     RAJAONGKIR_ACCOUNT_TYPE=starter
     RAJAONGKIR_API_KEY=your-api-key
     RAJAONGKIR_PROV_TABLE=ro_province
     RAJAONGKIR_CITY_TABLE=ro_city
     RAJAONGKIR_CACHE=database
+
 ***
 #### Caching
 **Migrating table city and provinsi**
 
-> If you want to use database cache, you must run migrate first. 
-
-<h3>Caching Province and City</h3><br>
+<h3>Caching Province and City</h3>
 
 Open console/cmd and run
 
     php artisan raja-ongkir:cache
 
-<h3>Caching City</h3><br>
+<h3>Caching City</h3>
 
 Open console/cmd and run
 
     php artisan raja-ongkir:cache-city
 
-<h3>Caching Province</h3><br>
+<h3>Caching Province</h3>
 
 Open console/cmd and run
 
@@ -47,8 +48,11 @@ Open console/cmd and run
 
 Buka Postman, masukkan url/endpoint
 
-http://localhost:8000/api/search/provinces?id={city_id}
-http://localhost:8000/api/search/provinces?id={province_id}
+    http://localhost:8000/api/search/provinces?id={city_id}
+
+    http://localhost:8000/api/search/provinces?id={province_id}
 
 #### Screenshoot
+![This is an image](get-city.png)
 
+![This is an image](get-province.png)
