@@ -16,8 +16,12 @@ class RajaOngkirController extends Controller
 
                 $data = Ongkir::find(['province_id' => $request->id])->province()->get();
                 
-                $data = $data->isEmpty() ? [] : $data->toArray();
+                if(is_object($data)){
+                    $data = collect($data);
+                } 
                 
+                $data = $data->isEmpty() ? [] : $data->toArray();
+                                
                 return $this->successResponse($data);
 
             } else {
@@ -39,6 +43,10 @@ class RajaOngkirController extends Controller
 
                 $data = Ongkir::find(['city_id' => $request->id])->city()->get();
 
+                if(is_object($data)){
+                    $data = collect($data);
+                } 
+                
                 $data = $data->isEmpty() ? [] : $data->toArray();
                 
                 return $this->successResponse($data);
