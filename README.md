@@ -1,6 +1,6 @@
 <h2>Branch With Credential</h2>
 
-<h3>Akses endpoint menggunakan user, password, dan token</h3>
+<h3>Akses endpoint dengan Autentikasi</h3>
 
 #### Tahap Install
 1. Pastikan program sudah berjalan lancar pada branch main
@@ -10,8 +10,8 @@
 
 <h2>Ubah sumber data pencarian</h2>
     Sumber data pencarian data diubah melalui file .env pada bagian RAJAONGKIR_CACHE
-    untuk mengambil dari Raja Ongkir API silahkan isi dengan null, apabila ingin mengambil data
-    dari database isi dengan database
+    untuk mengambil dari Raja Ongkir API silahkan isi dengan <b>null</b>, apabila ingin mengambil data
+    dari database isi dengan <b>database</b>
 
 
 #### Register User dan Login
@@ -25,10 +25,12 @@ Buka Postman, masukkan url/endpoint
     email
     password
 
+![This is an image](daftar.png)
+
     Login
 
     [POST] http://localhost:8000/api/login
-    
+
     Parameter : 
     email
     password
