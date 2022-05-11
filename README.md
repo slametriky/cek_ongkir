@@ -8,6 +8,7 @@ Cek ongkir dengan Laravel 8.x dan API Rajaongkir
 2. `$ cd cek-ongkir`
 3. `$ composer install`
 4. `$ cp .env.example .env`
+5. Sesuaikan pengaturan database di file .env 
 5. `$ php artisan key:generate`
 5. `$ php artisan migrate`
 6. `$ php artisan serve`
