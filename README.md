@@ -58,3 +58,9 @@ Buka Postman, masukkan url/endpoint
 <p>Guest Cannot Access Without Auth</p>
 
 ![This is an image](not-authenticate.png)
+
+<h2>Unit Test</h2>
+Untuk menjalankan Unit Test ketikkan perintah berikut di terminal/cmd
+    php artisan test
+
+![This is an image](test.png)
