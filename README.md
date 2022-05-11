@@ -41,7 +41,7 @@ Buka Postman, masukkan url/endpoint
 
 Buka Postman, masukkan url/endpoint
 
-    [GET] http://localhost:8000/api/search/provinces?id={city_id}
+    [GET] http://localhost:8000/api/search/provinces?id={province_id}
     
     Headers:
     Accept  : application/json
@@ -61,6 +61,7 @@ Buka Postman, masukkan url/endpoint
 
 <h2>Unit Test</h2>
 Untuk menjalankan Unit Test ketikkan perintah berikut di terminal/cmd
+    
     php artisan test
 
 ![This is an image](test.png)
