@@ -1,19 +1,15 @@
 <h2>Branch With Credential</h2>
+Pindah ke branch with_credential, buka cmd/terminal, ketikkan
+
+    git checkout with_credential
 
 <h3>Akses endpoint dengan Autentikasi</h3>
 
 #### Tahap Install
 1. Pastikan program sudah berjalan lancar pada branch main
 2. `$ composer install`
-4. `$ php artisan migrate`
-5. `$ php artisan serve`
-
-<h2>Ubah sumber data pencarian</h2>
-    Sumber data pencarian data diubah melalui file .env pada bagian RAJAONGKIR_CACHE
-    untuk mengambil dari Raja Ongkir API silahkan isi dengan <b>null</b>, apabila ingin mengambil data
-    dari database isi dengan <b>database</b>
-
-
+3. `$ php artisan migrate`
+4. `$ php artisan serve`
 #### Register User dan Login
 
 Buka Postman, masukkan url/endpoint
@@ -58,6 +54,11 @@ Buka Postman, masukkan url/endpoint
 <p>Guest Cannot Access Without Auth</p>
 
 ![This is an image](not-authenticate.png)
+
+<h2>Ubah sumber data pencarian</h2>
+    Sumber data pencarian data diubah melalui file .env pada bagian RAJAONGKIR_CACHE
+    untuk mengambil dari Raja Ongkir API silahkan isi dengan <b>null</b>, apabila ingin mengambil data
+    dari database isi dengan <b>database</b>
 
 <h2>Unit Test</h2>
 Untuk menjalankan Unit Test ketikkan perintah berikut di terminal/cmd
