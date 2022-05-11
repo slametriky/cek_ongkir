@@ -87,14 +87,14 @@ class Api extends CacheUrl
     protected static function get_city($arr = null)
     {
         if ($arr != null) {
-            $province_id = array_key_exists('province_id', $arr) ? '?province='.$arr['province_id'] : null;
+            $id = array_key_exists('id', $arr) ? '?id='.$arr['id'] : null;
         } else {
-            $province_id = null;
+            $id = null;
         }
         self::setup_option();
         $curl = curl_init();
         curl_setopt_array($curl, [
-            CURLOPT_URL            => self::$url.'/city'.$province_id,
+            CURLOPT_URL            => self::$url.'/city'.$id,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING       => '',
             CURLOPT_MAXREDIRS      => 10,

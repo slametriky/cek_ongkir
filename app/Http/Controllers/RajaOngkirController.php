@@ -41,7 +41,7 @@ class RajaOngkirController extends Controller
 
             if($request->get('id')){
 
-                $data = Ongkir::find(['city_id' => $request->id])->city()->get();
+                $data = Ongkir::find(['id' => $request->id])->city()->get();
 
                 if(is_object($data)){
                     $data = collect($data);

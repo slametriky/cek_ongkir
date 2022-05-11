@@ -81,11 +81,7 @@ class Ongkir extends Api
             $cache_type = self::$cacheType;
             if ($cache_type == 'database') {
                 if (ROCache::checkProv()) {
-                    if (count(ROCache::getProv(self::$arr)) > 0) {
-                        $ret = ROCache::getProv(self::$arr);
-                    } else {
-                        $ret = self::get_province(self::$arr);
-                    }
+                    $ret = ROCache::getProv(self::$arr);                    
                 }
             } else {
                 $ret = self::get_province(self::$arr);
